@@ -1,0 +1,62 @@
+1. install latest version of Git on your computer
+
+2. log into your gitHub account with your usma email via this link
+    <https://github.com/enterprises/westpoint-emu>
+
+3. Make note of your username! mine is @git-it-gurl
+
+4.  a) In VS code install the "GitHub Pull Requests" extension
+
+    b) In the file explorer navigate to 
+    the directory on your computer where you would like to 
+    clone the repository files. I reccomend NOT using OneDrive
+    it can cause weird authentication errors.
+
+5. Open a terminal in VS Code and execute 
+the following lines with your GitHub information filled in:
+    git config --global user.name "Your Name"
+    git config --global user.email "your.email@example.com"
+
+    mine looked like:
+    git config --global user.name "git-it-gurl"
+    git config --global user.email "kathryn.dula@westpoint.edu"
+
+6. click on the person icon in the lower left-hand corner and select:
+    "Sign into GitHub"
+
+7. On GitHub create a repository and copy the HTTPS link
+    (found when you click on the GREEN code drop down menu)
+
+8.  a) navigate to the SAME folder in your terminal 
+    that you did in the VS code file explorer in step 4.b)
+
+    b) Once you have that copied to your clipboard,
+     go back to VS Code and type the following into your terminal:
+    git clone <copied url>
+
+    mine looked like:
+    git clone https://github.com/git-it-gurl/capstone_test.git
+
+9. Then you should see all the files of the repo population in your file explorer in VSCode!
+
+10. create a new jupyter file. (test.ipynb) and write some code in it!
+
+11. a) navigate into your repo folder in the terminal:
+        cd C:\Users\kathryn.dula\Documents\capstone\capstone_test
+    b) In your terminal type:
+        git add .
+        git commit -m "<insert comments on the work you have done>"
+        git push
+
+12. Everytime you make ANY chnages on your laptop you MUST run through
+    these 3 commands to PUSH all your changes to the REMOTE repository stored on GitHub servers
+    so that your team can see them.
+
+13. Everytime you start a new coding session PULL down chnages made by your team from the GitHub remote repositort
+    onto your local laptop, so that you're working on the most-recent version of the code.
+    To do this executue the following command:
+        git pull
+
+
+
+
